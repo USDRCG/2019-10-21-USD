@@ -3,7 +3,10 @@ layout: workshop      # DON'T CHANGE THIS.
 carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").
                       # Be sure to update the Carpentry type in _config.yml as well.
 venue: "University of South Dakota"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "Oct 21 - Delzell 203, Oct 22 - MUC 211, 414 E. Clark St, Vermillion, SD 57069"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+address1: "10/21 - USD Main Campus, Delzell Education Center 203"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+addr1place: "Delzell+Education+Center,+Vermillion,+SD+57069/@42.7853906,-96.925873,17z"
+address2: "10/22 - USD Main Campus, Muenster University Center 211"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+addr2place: "Muenster+University+Center,+Vermillion,+SD+57069/@42.786205,-96.9258107,19z"
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 latlng: "42.785553,-96.923922"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
@@ -98,7 +101,8 @@ address.
 {% if page.latlng %}
 <p id="where">
   <strong>Where:</strong>
-  {{page.address}}.
+  <a href="//maps.google.com/maps/place/{{page.addr1place}}">{{page.address1}}</a>;&nbsp;
+  <a href="//maps.google.com/maps/place/{{page.addr2place}}">{{page.address2}}</a>
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
