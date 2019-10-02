@@ -102,7 +102,7 @@ address.
 {% if page.latlng %}
 <p id="where">
   <strong>Where:</strong>
-  <a href="//maps.google.com/maps/place/{{page.addr1place}}">{{page.address1}}</a>;&nbsp;
+  <a href="//maps.google.com/maps/place/{{page.addr1place}}">{{page.address1}}</a>;
   <a href="//maps.google.com/maps/place/{{page.addr2place}}">{{page.address2}}</a>
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
