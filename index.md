@@ -118,8 +118,8 @@ PARKING
 Add parking info here
 {% endcomment %}
 
-**Parking:**
 <p id="parking">
+**Parking:**
 Visitors may park in <a href="{{page.parkingmap}}">Lot 3</a> or <a href="{{page.parkingmap}}">Lot 4</a>.
 </p>
 
