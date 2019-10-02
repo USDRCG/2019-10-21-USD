@@ -119,8 +119,8 @@ Add parking info here
 {% endcomment %}
 
 <p id="parking">
-<strong>Parking:</strong>
-Visitors may park in <a href="{{page.parkingmap}}">Lot 3</a> or <a href="{{page.parkingmap}}">Lot 4</a>.
+  <strong>Parking:</strong>
+  Visitors may park in <a href="{{page.parkingmap}}">Lot 3</a> or <a href="{{page.parkingmap}}">Lot 4</a>.
 </p>
 
 {% comment %}
